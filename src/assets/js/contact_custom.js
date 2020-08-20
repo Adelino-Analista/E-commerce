@@ -17,7 +17,7 @@ $(document).ready(function()
 {
 	"use strict";
 
-	/* 
+	/*
 
 	1. Vars and Inits
 
@@ -38,7 +38,7 @@ $(document).ready(function()
 		setHeader();
 	});
 
-	/* 
+	/*
 
 	2. Set Header
 
@@ -69,7 +69,7 @@ $(document).ready(function()
 		}
 	}
 
-	/* 
+	/*
 
 	3. Init Custom Dropdown
 
@@ -134,7 +134,7 @@ $(document).ready(function()
 		});
 	}
 
-	/* 
+	/*
 
 	4. Init Page Menu
 
@@ -213,7 +213,7 @@ $(document).ready(function()
 	function initGoogleMap()
 	{
 		var myLatlng = new google.maps.LatLng(51.507098, -0.126270);
-    	var mapOptions = 
+    	var mapOptions =
     	{
     		center: myLatlng,
 	       	zoom: 14,
@@ -414,14 +414,14 @@ $(document).ready(function()
     	map = new google.maps.Map(document.getElementById('map'), mapOptions);
 
     	// Use an image for a marker
-		var image = 'images/marker.png';
+		var image = '../assets/images/marker.png';
 		var marker = new google.maps.Marker(
 		{
 			position: myLatlng,
 			map: map,
 			icon: image
 		});
-   
+
 		// Re-center map after window resize
 		google.maps.event.addDomListener(window, 'resize', function()
 		{
